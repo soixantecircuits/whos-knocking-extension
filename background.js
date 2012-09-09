@@ -12,16 +12,16 @@ function init(){
             var hour = time[1] % 12 || 12;               // The prettyprinted hour.
             var period = time[1] < 12 ? 'a.m.' : 'p.m.'; // The period of the day.
             var notification = window.webkitNotifications.createNotification(
-              '48.png',                      // The image.
+              'icon48.png',                      // The image.
               data.user.name + " is knocking !", // The title.
               data.text      // The body.
             );
             notification.show();
    });
    var notification = window.webkitNotifications.createNotification(
-              '48.png',                      // The image.
+              'icon48.png',                      // The image.
               "Who's Knocking initialization ...", // The title.
-              "Welcome ! Hope you will enjoy your daily notifications."      // The body.
+              "Welcome ! Hope you will enjoy your daily knock knock."      // The body.
             );
             notification.show();
 }
